@@ -407,9 +407,9 @@ void *kUserDataHint = &kUserDataHint;
             MASShortcut *shortcut = [MASShortcut shortcutWithEvent:event];
 
             // Tab key must pass through.
-            if (shortcut.keyCode == kVK_Tab){
+            /*if (shortcut.keyCode == kVK_Tab){
                 return event;
-            }
+            }*/
 
             // If the shortcut is a plain Delete or Backspace, clear the current shortcut and cancel recording
             if (!shortcut.modifierFlags && ((shortcut.keyCode == kVK_Delete) || (shortcut.keyCode == kVK_ForwardDelete))) {
